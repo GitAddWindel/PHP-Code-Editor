@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>PHP Code Editor</title>
+</head>
+<body>
+
+<div id="editor-container">
+    <h2>PHP Code Editor</h2>
+<div id="editor-wrapper">
+  <textarea id="editor" data-line-number="1">&lt;?php 
+echo "Hello, from Dev Wen!";
+?&gt;</textarea>
+<div id="line-numbers"></div>
+  </div>
+
+  <div id="button-container">
+  <button id="execute-button" onclick="executePHP()">Run</button>
+  <button id="save-button" onclick="saveAs()">Save As</button>
+</div>
+
+
+  <div id="output"></div>
+</div>
+
+<script src="compiler.js"></script>
+</body>
+</html>
